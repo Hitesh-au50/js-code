@@ -1,0 +1,106 @@
+OOPS:- object oriented programming principals
+
+
+4 types of oops
+
+
+a.) Encapsulation
+b.) Abstraction
+c.) Inheritance
+d.) Polymorphism
+
+
+
+
+code of oops:-
+
+
+
+
+one class:-
+
+
+class Student{
+    constructor(name,age,marks){
+        this.marks = marks;
+        this.age = age;
+        this.name = name;
+    }
+    getTotalmarks(){
+        return this.marks
+    }
+}
+let st1 = new Student("hitesh",20,87);
+console.log(st1.getTotalmarks())
+
+
+
+
+
+two class:-
+
+
+
+
+
+
+class A{
+    constructor(b){
+        this.b = b;
+    }
+    addTen(){
+        return this.b+20923899
+    }
+}
+class B {
+    constructor(){
+       
+    }
+    addTen(){
+        return 3847;
+    }
+} 
+let objA = new A(4);
+console.log(objA.addTen());
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+TEMPERATURE:-
+
+
+
+
+class Temperature{
+    constructor(value){
+        this.val = value;
+    }
+    ferTocel(){
+        return Math.floor((this.val-32)*5/9);
+    }
+    celTofer(){
+        return Math.floor((this.val*1.8)+32);
+    }
+}
+
+let temp = new Temperature(57);
+
+console.log(temp.celTofer());
+console.log(temp.ferTocel())
+

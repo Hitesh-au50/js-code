@@ -1,0 +1,23 @@
+
+
+SWITCH:-
+
+
+
+function calculategrade(n){
+    let a = 58;
+    switch(a){
+        case 10:
+    console.log("i am 10")
+    break;
+    case 20:
+        console.log("i am 20")
+        break;
+        default :
+        console.log("i am default")
+    }
+    
+}
+calculategrade()
+
+

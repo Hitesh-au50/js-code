@@ -1,0 +1,76 @@
+class Nodes{
+    constructor(value){
+        this.val = value;
+        this.left = null;
+        this.right = null;
+    }
+}
+
+let node1 = new Nodes(1);
+let node2 = new Nodes(2);
+let node3 = new Nodes(3);
+let node4 = new Nodes(5);
+let node5 = new Nodes(4);
+
+ node1.left = node2;
+ node1.right = node4;
+ node2.left = node3;
+ node2.right = node5;
+
+ root = node1;
+
+
+ function preOrder(root){                //  root  -> left  ->  right
+    if(root == null) return;
+    console.log(root.val);
+    preOrder(root.left);
+    preOrder(root.right)
+ }
+
+
+ function INOrder(root){               //   left  ->  root  ->  right
+    if(root == null) return;
+    INOrder(root.left);
+    console.log(root.val);
+    INOrder(root.right);
+ }
+
+
+function postOrder(root){           // left  ->   right   ->   root
+    if(root == null) return;
+    postOrder(root.left);
+    postOrder(root.right);
+    console.log(root.val);
+}
+
+
+function countSteps(root){                // count all nodes(method no.1)
+    if(root == null) return 0;
+    let lsn = countSteps(root.left);
+    let rsn = countSteps(root.right);
+    return lsn + rsn + 1;
+}
+
+let count = 0
+function countSteps2(root){               // count all nodes (method no.2)
+    if(root == null) return;
+    count++
+    countSteps2(root.left);
+    countSteps2(root.right);
+}
+ 
+
+
+preOrder(root);      //12345
+console.log("_____")
+INOrder(root)       //32415
+console.log("_____")
+postOrder(root)    //34251
+console.log("_____")
+v = countSteps(root)
+console.log(v)          //5
+console.log("_____")
+countSteps2(root)
+console.log(count)   //5
+
+

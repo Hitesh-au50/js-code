@@ -1,0 +1,120 @@
+
+loops:- loops are used in javascript to perform repeated tasks based on a condition.
+
+
+
+
+
+
+WHILE LOOP:-
+
+i=0                                                               
+while(i>100){
+    console.log("hello");
+i++
+}                                                              
+
+
+FOR LOOP:-
+
+
+   
+for(i=0; i<4; i++){
+    console.log("hitesh");
+}
+
+
+DO WHILE LOOP:-
+
+i=0;
+do{
+console.log("hitesh");
+i++;
+}while(i>3)
+
+
+
+
+
+
+join/nested loop:-
+
+
+for(i=1;i<=5;i++)
+{
+for(j=1;j<=3;j++)
+{
+console.log("print",ij);
+}
+}
+
+
+
+
+
+
+
+forof LOOP:-
+
+
+let arr=[1,2,3,4]
+let sum=0
+for(x of arr)
+{
+    sum+=x;
+}
+console.log(sum)//10
+
+
+
+
+
+
+
+forEach LOOP:-
+
+
+arr = [1,2,3,4]
+    let sum=0
+    function myFunc(item,id,arr){
+        sum+=item;
+    }
+
+    arr.forEach(myFunc);
+    console.log(sum)//10
+
+
+
+arr = [1,2,3,4,5,6]
+arr.forEach(fun) 
+function fun(ind , val , arr) {
+//  console.log(ind);
+//  console.log(val);
+ console.log(arr);  //6 times print arr
+};
+
+
+
+
+
+
+
+for in LOOP:-
+
+let student = [1,2,3,4,5,6]
+
+for(item in student){
+    console.log(item)
+    }/*0
+1
+2
+3
+4
+5
+*/
+    
+    
+
+
+
+

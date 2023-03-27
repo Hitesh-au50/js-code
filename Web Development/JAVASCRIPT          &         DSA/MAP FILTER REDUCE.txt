@@ -1,0 +1,61 @@
+
+
+
+
+MAP:-
+
+
+
+var arr = [1,2,3,4,5,6,7,8,9,10]
+
+var result = arr.map(item => item*5)
+console.log(result)//[5, 10, 15, 20, 25,30, 35, 40, 45, 50]
+
+
+
+
+var a=[6,7,88,66]
+function callback(val,ind,arr){
+    return val/2
+}
+var b=a.map(callback)
+console.log(b)//[ 3, 3.5, 44, 33 ]
+
+
+
+
+
+
+FILTER:-
+
+
+var arr = [1,2,3,4,5,6,7,8,9,10]
+
+var result = arr.filter(item => item%2==0)
+console.log(result)//[ 2, 4, 6, 8, 10 ]
+
+
+
+
+
+
+
+REDUCE:-
+
+
+
+var arr = [1,2,3,4,5,6,7,8,9,10]
+
+var result = arr.reduce((acc,item) => acc+item)
+console.log(result)//55
+
+
+
+var arr = [1,5,10,15]
+
+var newArr = arr.filter(item => item%5!=0).reduce((res, val) => res+val)
+
+console.log(newArr);
+
+
+

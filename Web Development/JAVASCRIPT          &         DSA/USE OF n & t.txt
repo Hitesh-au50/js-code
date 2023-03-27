@@ -1,0 +1,18 @@
+
+
+USE OF \n  --->> NEW LINE
+
+
+str = `hello\nworld`;
+console.log(str)//hello
+                //world
+
+
+USE OF \t  --->> TAB
+
+
+str = `hello \t world`;
+console.log(str)//hello    world
+
+
+

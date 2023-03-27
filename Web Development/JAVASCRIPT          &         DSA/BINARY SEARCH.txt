@@ -1,0 +1,24 @@
+
+
+BINARY SEARCH:-
+
+
+
+function search(nums, target) {
+    
+    var l = 0;
+    var r = nums.length-1;
+    while(l<=r){
+        let mid = Math.floor(l+(r-l)/2);
+        if (target < nums[mid]) {
+            r = --mid
+        } else if ( target>nums[mid]){
+            l = ++mid; 
+        } else return mid;
+                  } return -1
+    }
+
+    var a = [-1,0,3,5,9,11] , b = 9
+console.log(search(a,b))
+ 
+

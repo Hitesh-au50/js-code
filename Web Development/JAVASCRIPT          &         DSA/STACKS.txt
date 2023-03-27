@@ -1,0 +1,55 @@
+
+
+
+STACK:- add on top and remove from top(LIFO)
+
+
+
+4 types of stack:-
+
+
+push();
+pop();
+peak();
+isEmpty();
+
+
+
+
+
+
+code:-
+
+
+
+
+
+
+
+class Stack{
+    constructor(){
+        this.arr = [];
+    }
+     push(element){
+            this.arr.push(element)
+     }
+     pop(){
+            return this.arr.pop()
+     }
+     peak(){
+            return this.arr[this.arr.length-1]
+     }
+     isEmpty(){
+            return this.arr.length==0
+     }
+}
+
+let st = new Stack();
+console.log( st.push(2));
+console.log(st.push(3));
+console.log(st.pop(),
+st.push(7),
+st.peak(),
+st.pop(),
+st.pop())
+console.log(st.isEmpty());

@@ -1,0 +1,95 @@
+LINKEDLIST:-
+
+
+
+
+class Node {
+    constructor(value){
+            this.val  = value;
+            this.next = null;
+    }
+}
+class Linkedlist{
+        constructor(){
+            this.head = null
+        }
+        insertAtEnd(val){     // insert value from end in linkedlist
+        let node = new Node(val);
+        if(this.head==null){
+            this.head = node;
+        }
+        else{
+            let cur = this.head;
+            while(cur.next!=null){
+                cur = cur.next;
+            }
+            cur.next = node;
+        }
+    }
+        insertAtBegain(val){     // insert value from front in linkedlist
+            let node = new Node(val)
+            node.next = this.head
+            this.head = node
+
+        }
+        printSize(){     // show the linkedlist size
+            let cur = this.head;
+            let size = 0;
+            while(cur!=null){
+                cur = cur.next;
+                size++
+            }
+            console.log(size)
+        }
+        deleteFromEnd(){             // delete from end in linkedlist
+            let cur = this.head;
+            let prev = null;
+            while(cur.next!=null){
+                prev = cur;
+                cur = cur.next;
+            }
+            prev.next = null;
+        }
+        deleteFromFreont(){         // delete from front in linkedlist
+            while(this.head ==null) {
+                return;
+               }
+               this.head = this.head.next;
+        }
+        printll(){           //print all linkedlist value in Number & different line
+            let cur = this.head;
+            while(cur){
+                console.log(cur.val);
+                cur = cur.next;
+            }
+          }
+        printLLByString(){           // print all linkedlist value in string & same line
+            let cur = this.head;
+            let str = "";
+            while(cur){
+                str += cur.val + " ";
+                cur = cur.next;
+            }
+            console.log(str)
+        }
+        
+    }
+
+let lilist = new Linkedlist();
+lilist.insertAtBegain(2)
+lilist.insertAtBegain(5)
+lilist.insertAtBegain(6)
+lilist.insertAtBegain(8)
+lilist.insertAtBegain(3)
+lilist.insertAtEnd(2)
+lilist.insertAtEnd(7698797985)
+console.log(lilist)
+lilist.printSize()
+lilist.deleteFromEnd()
+lilist.printSize()
+lilist.deleteFromFreont()
+console.log(lilist)
+lilist.printll()
+lilist.printLLByString()
+
+

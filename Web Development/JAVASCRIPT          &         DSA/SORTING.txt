@@ -1,0 +1,140 @@
+SELECTION SORTING:-
+
+
+
+
+function selectionSort(arr) {  // create a function of given here slectionSort
+
+     for (let i = 0; i < arr.length; i++) { // creat a for loop for chek the arr index value
+
+             let lowest = i // 
+         for (let j = i + 1; j < arr.length; j++) { // agian create a for loops for finding second lowest
+
+             while (arr[j] < arr[lowest]) { // create a while loops and give here condtions
+
+                  lowest = j // it will take second lowest 
+                    }
+             }
+      if (lowest !== i) {    // Swap      ;
+             [arr[i], arr[lowest]] = [arr[lowest], arr[i]]  
+     }
+     }
+                 return arr
+ }
+     console.log(selectionSort([3, 5, 1, 2])) // [1, 2, 3, 5]
+
+
+
+
+
+
+
+
+
+
+MERGE:-
+
+
+
+
+
+let A = [1,4,6,9,12,15]; // n
+let B = [2,3,7]; // m
+
+function merge(A,B){
+    let p = 0;     
+    let q = 0;
+    let C = []; // O(n+m)
+    while(p<A.length && q<B.length){
+        if(A[p]<B[q]){
+            C.push(A[p]);
+            p++;
+        }
+        else{
+            C.push(B[q]);
+            q++;
+        }
+    }
+    // C = [1,2,3,4,6,7]
+    while(p<A.length){
+        C.push(A[p]);
+        p++;
+    }
+    while(q<B.length){
+        C.push(B[q]);
+        q++;
+    }
+    return C;
+}
+
+console.log(merge(A,B));
+
+
+
+
+
+
+
+
+
+
+MERGE SORTING:-
+
+
+
+
+function mergeSort(Arr, l, r){
+    if(l>=r) return;
+    let mid = Math.floor((l+r)/2);
+    mergeSort(Arr, l, mid);
+    mergeSort(Arr, mid+1, r);
+    merge(Arr, l, mid, r);
+}
+
+function merge(Arr, l, m, r){
+    let A = [];
+    let B = [];
+    for(let i=l; i<=m; i++){
+        A.push(Arr[i]);
+    }
+    for(let j=m+1; j<=r; j++){
+        B.push(Arr[j]);
+    }
+    // console.log("A is: ", A);
+    // console.log("B is: ", B)
+    // A & B
+
+    let p = 0;     
+    let q = 0;
+    let y = l;
+    while(p<A.length && q<B.length){
+        if(A[p]<B[q]){
+            Arr[y] = A[p];
+            p++;
+        }
+        else{
+            Arr[y] = B[q];
+            q++;
+        }
+        y++;
+    }
+    // C = [1,2,3,4,6,7]
+    while(p<A.length){
+        Arr[y] = A[p];
+        p++;
+        y++;
+    }
+    while(q<B.length){
+        Arr[y] = B[q];
+        q++;
+        y++;
+    }
+    // Arr = [...C];
+    // console.log("C is: ", Arr);
+}
+
+let Arr = [1,5,2,7,3,4,12,15];
+mergeSort(Arr, 0, Arr.length-1);
+console.log(Arr);
+
+

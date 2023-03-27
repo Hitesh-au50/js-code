@@ -1,0 +1,20 @@
+
+
+MATRIX:-
+
+
+
+
+n = rows
+m = columns
+n==m (square matrix)
+n!=m (rectangle matrix)
+
+
+Mat.length = rows
+Mat[0].length = columns
+Mat[i][j] = index of matrix
+Principal diagonal(start top of the left)
+right diagonal(start top of the right)
+
+

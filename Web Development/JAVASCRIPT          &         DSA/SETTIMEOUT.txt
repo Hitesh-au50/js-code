@@ -1,0 +1,28 @@
+SETTIMEOUT:-set time which function we have call.
+
+
+
+
+
+SETTIMEOUT:-
+
+
+function hello (){
+    console.log('hello students')
+}
+setTimeout(hello,10000)//hello students
+
+
+
+function hello (){
+    console.log('hello students')
+}
+
+
+function outer(){
+    a='hitesh'
+    hello(a)
+}
+// console.log(outer)
+setTimeout(outer,1000)
+

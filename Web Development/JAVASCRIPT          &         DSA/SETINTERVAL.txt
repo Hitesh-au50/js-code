@@ -1,0 +1,15 @@
+
+
+
+SETINTERVAL:-
+
+
+
+
+function Hello(){
+    console.log("hello")//infinite times 
+}
+
+setInterval(Hello,500)
+
+

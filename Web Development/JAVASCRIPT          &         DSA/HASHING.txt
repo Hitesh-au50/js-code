@@ -1,0 +1,22 @@
+HASHING:-
+
+
+
+(this program written in function)
+
+
+
+let freq = {};
+let n = nums.length;
+for(let i=0; i<n; i++){
+    if(freq[nums[i]]){
+        freq[nums[i]]++;
+    }
+    else {
+        freq[nums[i]] = 1;
+    }
+}
+for(item in freq){
+    if(freq[item] > n/2)      [always change in (if condition)]
+    return Number(item);
+}

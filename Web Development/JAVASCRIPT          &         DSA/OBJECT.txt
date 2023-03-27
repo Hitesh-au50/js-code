@@ -1,0 +1,98 @@
+OBJECT:-
+
+
+
+OBJECTS:-
+
+
+var student = {
+    name : "David Rayy",
+    sclass : "VI",
+    rollno : 12
+    }; 
+    console.log(Object.keys(student));//[ 'name', 'sclass', 'rollno' ]
+    console.log(student["name"])//David Rayy
+    student.marks=45
+    console.log(student)//{ name: 'David Rayy', sclass: 'VI', rollno: 12, marks: 45 }
+    student.name="hitesh"
+    console.log(student)//{ name: 'hitesh', sclass: 'VI', rollno: 12, marks: 45 }
+
+
+
+
+
+
+
+
+
+
+
+
+OBJ KEYS:-
+
+
+
+const obj = {
+    country: 'Chile',
+    city: 'Santiago',
+    address: 'Example',
+  };
+  
+  Object.keys(obj).forEach(key => {
+    obj[key] = '';
+  });
+  
+  // 👇️ {country: '', city: '', address: ''}
+  console.log(obj);
+
+
+
+
+
+
+
+
+ADD KEY IN OBJECT:-
+
+
+
+
+var student = {
+    name : "David Rayy",
+    sclass : "VI",
+    rollno : 12
+    }; 
+    console.log(Object.keys(student));//[ 'name', 'sclass', 'rollno' ]
+    console.log(student["name"])//David Rayy
+    student.marks=45
+    console.log(student)//{ name: 'David Rayy', sclass: 'VI', rollno: 12, marks: 45 }
+    student.name="hitesh"
+    console.log(student)//{ name: 'hitesh', sclass: 'VI', rollno: 12, marks: 45 }
+
+
+
+
+
+
+CHANGE IN ONJ.:-
+
+
+
+
+
+let obj1 ={
+    fruit : "apple",
+    vagi : "tomato"
+
+}
+var new_obj = Object.assign(obj1);
+console.log(`original value:--`)
+console.log (obj1);  //{ fruit: 'apple', vagi: 'tomato' }
+console.log (new_obj); //{ fruit: 'apple', vagi: 'tomato' }
+// console.log ("-------------------");
+
+obj1.curry = "bangan ka varta"
+console.log(`modified values:--`)
+console.log(obj1)     //{ fruti: 'apple', vagi: 'tomato', curry: 'bangan ka varta' }
+console.log(new_obj)  //{ fruti: 'apple', vagi: 'tomato', curry: 'bangan ka varta' }
+

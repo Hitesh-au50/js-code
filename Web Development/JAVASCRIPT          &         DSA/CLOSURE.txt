@@ -1,0 +1,16 @@
+
+
+CLOSURE:-
+
+
+function outer(){
+    var temp = 6;
+    function inner(x){
+        return x+temp
+    }
+    return inner;
+}
+result = outer()
+console.log(result(3))
+
+

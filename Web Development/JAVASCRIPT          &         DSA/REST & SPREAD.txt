@@ -1,0 +1,95 @@
+REST OPERATOR:-Allows a function to accept an indefinite number of arguments as an array.
+
+
+
+
+SPREAD OPERATOR:-Allows an iterable to expand in places where 0+ arguments are expected.
+
+
+
+
+
+
+
+
+// SPREAD OPERATOR:-
+
+
+
+function allow(a,b,...c){
+    let d = [1,2,3,4,'verma',6];
+    let e = [2,3,5,'jii',7];
+    h = [...d,...e];
+    console.log(h)
+    console.log(a);
+    console.log(b);
+    console.log(c);
+}
+
+allow(2,4,6,8,9,5)
+
+
+
+
+
+// REST OPERATOR:-
+
+
+function outer(a,b,...c){
+
+    console.log(a);
+    console.log(b);
+    console.log(c);
+
+}  
+outer(3,5,2,4,7,"hello",6)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+REST OPERATOR:-
+
+
+
+function sum(a,b,...c){
+    console.log(a);//1
+    console.log(b);//2
+    console.log(c);//[ 3, 4, 5, 6, 7, 8 ]
+}
+
+sum(1,2,3,4,5,6,7,8)
+
+
+
+SPREAD OPERATOR:-  join two arrays
+
+
+A=[1,2,3];
+B=[4,5,6];
+c=[...A,...B]
+console.log(c)//[ 1, 2, 3, 4, 5, 6 ]
+
+

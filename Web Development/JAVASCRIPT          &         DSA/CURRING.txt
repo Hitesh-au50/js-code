@@ -1,0 +1,23 @@
+CURRYING:-Call multiple function in a single argument.
+
+
+
+
+
+
+CURRYING:-
+
+
+function length(x){
+    function width(y){
+        function height(z){
+        console.log(x*y*z);
+        }
+        return height;
+    }
+    return width;
+}
+length(3)(5)(6);//90
+
+
+

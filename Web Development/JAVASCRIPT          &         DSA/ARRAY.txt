@@ -1,0 +1,151 @@
+ARRAY:- An array is a data structure consisting of a collection of element,each indefined by at least one array index or key.
+
+
+
+
+
+STRING:- A string is a sequence of one or more characters that may consist of letters,numbers,or symbols.
+
+
+
+
+
+
+Array:-
+
+ arr2 = [1,2,8,5,7]
+
+PUSH:-
+
+b=arr2.push(468)
+console.log(b)//6
+console.log(arr2)//[ 1, 2, 8, 5, 7, 468 ]
+
+POP:-
+
+b=arr2.pop()
+console.log(b)//7
+
+SORT:-
+
+d=arr2.sort()
+console.log(d)//[ 1, 2, 5, 7, 8 ]
+
+LENGTH:-
+
+e=arr2.length
+console.log(e)//5
+
+INDEXOF:-
+
+console.log(arr2.indexOf(5))//3
+
+SPLICE:-
+
+f=arr2.splice(3,2)
+console.log(f)//[ 5, 7 ]
+
+TOSTRING:-
+
+g=arr2.toString();
+console.log(g)//1,2,8
+
+JOIN:-
+
+let h=arr2.join();
+console.log(h);//1,2,8,5,7
+
+CONCAT:-
+
+a=[1,2,3];
+b=[4,5,6];
+let newArr=a.concat(b);
+console.log(newArr);//[ 1, 2, 3, 4, 5, 6 ]
+
+LASTINDEXOF:-
+
+console.log(arr2.lastIndexOf(8));//2
+
+REVERSE:-
+
+i=arr2.reverse();
+console.log(i);//[ 7, 5, 8, 2, 1 ]
+
+CHARAT:-
+
+s="this is sample string"
+j=s.charAt(5);
+console.log(j);//i
+
+SLICE:-
+
+let c=[1,4,6,9,3,21];
+d=c.slice(3,5);
+console.log(d);//[9,3]
+console.log(c);//[1,4,6,21]
+
+SHIFT:-
+
+k=arr2.shift();
+console.log(k);//1 remove
+console.log(arr2)//[ 2, 8, 5, 7 ]
+
+UNSHIFT:-
+
+l=arr2.unshift(46756);
+console.log(l);//6 array length
+console.log(arr2)//[ 46756, 1, 2, 8, 5, 7 ]
+
+FLAT:-
+
+arr = [1,2,[3,4],5,6]
+b=arr.flat()
+console.log(b)//[ 1, 2, 3, 4, 5, 6 ]
+
+
+
+
+
+
+
+ARRAY FROM INPUT USER:-
+
+
+let len = Number(require("Prompt-Sync")()());
+
+let arr = [];
+
+for (let i=0; i<len; i++){
+    arr[i] = Number(require("Prompt-Sync")()());
+}
+
+console.log(arr);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

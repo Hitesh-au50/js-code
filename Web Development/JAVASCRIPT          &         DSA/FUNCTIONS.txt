@@ -1,0 +1,70 @@
+FUNCTION:- A set of statements that perfoms a task or calculates a value.
+
+
+
+
+
+
+function sumoftwo(a,b){
+c=a+b;
+console.log(c);
+}
+sumoftwo(2,4);
+
+
+
+Function Expression:-
+
+
+let dosomthing = function (){
+a=100;
+b=a/10;
+return b-10;
+}
+console.log(dosomthing());
+
+
+Arrow function:-
+
+
+--->>   let dosomthing = () => {
+a=100;
+b=a/10;
+return b-10;
+}
+console.log(dosomthing());
+
+
+--->>   let sum = (a,b) => a+b;
+console.log(sum(3,4))
+
+
+
+
+Callback function:-
+
+
+
+
+let fun = () => {
+a=100
+a+=5
+return a--
+}
+
+letb
+ fun2 = (fun) => {
+c=fun()
+console.log(c)
+}
+
+fun2()
+
+
+
+ANONYMUS FUNCTION:-
+
+a=3
+b=4
+console.log((a,b)=>a+b);
+

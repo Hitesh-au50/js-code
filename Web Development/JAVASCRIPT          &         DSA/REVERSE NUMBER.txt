@@ -1,0 +1,31 @@
+
+
+
+REVERSE NUMBER:-
+
+(FIRST TRICK  (CONVERT TO ARR & REVERSE)  )
+
+function reverseNum(n){
+    n=n.toString();
+    n=n.split('');
+    n=n.reverse();
+    n=n.join('');
+    n=Number(n);
+    console.log(n)
+}
+reverseNum(234)
+
+(SECOND TRICK   (DIRECT REVERSE FROM NUMBER)   )
+
+
+function reverseNum(n){
+   let revNum=0;
+   while(n!=0){
+    rem = n%10;
+    n=Math.floor(n/10)
+    revNum=revNum*10+rem;
+   }
+   return revNum;
+}
+console.log(reverseNum(234));//432
+

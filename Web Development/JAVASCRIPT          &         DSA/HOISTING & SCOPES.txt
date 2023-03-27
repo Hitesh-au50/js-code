@@ -1,0 +1,44 @@
+
+
+HOISTING:-
+
+
+SCOPES:-The current context of code , which determine the accessibility of variables to javaScript.
+
+
+
+
+
+
+
+3TYPES OF SCOPE 
+
+
+1.)  GLOBAL SCOPE
+
+const a = 3;
+console.log(a)
+
+
+2.)  FUNCTION SCOPE
+
+
+function sum(b){
+    var b=7;
+    if(true){
+        let b=4
+    }
+console.log(b);
+}
+sum(5)
+
+
+3.) BLOCK SCOPE:-
+
+
+if(true){
+        let b=4
+    }
+console.log(b);
+
+

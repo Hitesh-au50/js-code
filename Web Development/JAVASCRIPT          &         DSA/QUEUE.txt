@@ -1,0 +1,48 @@
+QUEUE:-add in last and remove from front(FIFO)
+
+
+
+
+
+3 types of queue:-
+
+
+a.) enqueue(push)
+b.) dequeue(remove,shift)
+c.) isEmpty()
+
+
+
+
+
+
+code of queue:-
+
+
+
+
+
+class Queue{
+    constructor(){
+        this.arr = []
+    }
+    enqueue(item){
+        this.arr.push(item)
+    }
+    dequeue(){
+        return this.arr.shift()
+    }
+    isEmpty(){
+        return this.arr.length == 0
+    }
+}
+
+let q = new Queue();
+q.enqueue(7)
+q.enqueue(89)
+q.enqueue(2)
+console.log(q.dequeue())
+q.enqueue(4)
+console.log(q)
+
+
